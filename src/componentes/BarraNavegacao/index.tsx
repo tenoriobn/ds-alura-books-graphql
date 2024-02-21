@@ -8,6 +8,7 @@ import ModalLoginUsuario from "../ModalLoginUsuario"
 import logo from './assets/logo.png'
 import usuario from './assets/usuario.svg'
 import './BarraNavegacao.css'
+import MiniCarrinho from "../MiniCarrinho"
 
 const BarraNavegacao = () => {
 
@@ -91,6 +92,9 @@ const BarraNavegacao = () => {
                 <>
                     <li>
                         <Link to="/minha-conta/pedidos">Minha conta</Link>
+                    </li>
+                    <li>
+                        <MiniCarrinho />
                     </li>
                     <li>
                         <BotaoNavegacao 
