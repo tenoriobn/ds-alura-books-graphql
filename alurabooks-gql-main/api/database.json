@@ -598,25 +598,64 @@
         {
           "livroId": 2,
           "opcaoCompraId": 1,
-          "quantidade": 1
-        },
-        {
-          "livroId": 1,
-          "opcaoCompraId": 1,
-          "quantidade": 1
-        },
-        {
-          "livroId": 3,
-          "opcaoCompraId": 2,
-          "quantidade": 1
-        },
-        {
-          "livroId": 8,
-          "opcaoCompraId": 1,
-          "quantidade": 1
+          "quantidade": 1,
+          "livro": {
+            "id": 2,
+            "categoriaId": 3,
+            "tagIds": [
+              2,
+              3
+            ],
+            "titulo": "Angular 11 e Firebase",
+            "slug": "angular11-e-firebase",
+            "descricao": "Construindo uma aplicação integrada com a plataforma do Google",
+            "isbn": "978-85-7254-036-0",
+            "numeroPaginas": 163,
+            "publicacao": "2019-11-01",
+            "imagemCapa": "https://raw.githubusercontent.com/viniciosneves/alurabooks/curso-novo/public/imagens/livros/angular.png",
+            "autorId": 2,
+            "opcoesCompra": [
+              {
+                "id": 1,
+                "titulo": "E-book",
+                "preco": 29.9,
+                "formatos": [
+                  ".pdf",
+                  ".pub",
+                  ".mob"
+                ]
+              },
+              {
+                "id": 2,
+                "titulo": "Impresso",
+                "preco": 39.9
+              },
+              {
+                "id": 3,
+                "titulo": "E-book + Impresso",
+                "preco": 59.9,
+                "formatos": [
+                  ".pdf",
+                  ".pub",
+                  ".mob"
+                ]
+              }
+            ],
+            "sobre": "No desenvolvimento de aplicações web e mobile, há disponível uma quantidade expressiva de linguagens, frameworks e ferramentas. Nessa imensidão, é comum se questionar ou até ter inseguranças sobre qual o melhor caminho para a construção neste segmento. O Angular é uma plataforma que facilita a construção de aplicativos, combinando templates, injeção de dependências, tudo integrado às melhores práticas de desenvolvimento."
+          },
+          "opcaoCompra": {
+            "id": 1,
+            "titulo": "E-book",
+            "preco": 29.9,
+            "formatos": [
+              ".pdf",
+              ".pub",
+              ".mob"
+            ]
+          }
         }
       ],
-      "total": 89.8
+      "total": 0
     }
   ],
   "tags": [
