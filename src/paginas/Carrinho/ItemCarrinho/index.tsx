@@ -12,9 +12,17 @@ interface ItemCarrinhoProps {
 }
 
 const ItemCarrinho = ({ item } : ItemCarrinhoProps) => {
-    const { adicionarItemCarrinho } = useCarrinhoContext();
+    const { adicionarItemCarrinho, removerItemCarrinho } = useCarrinhoContext();
 
     const alterarQuantidadeDoItem = (quantidade: number) => {
+        if (quantidade === 0) {
+            removerItemCarrinho({
+                livro: item.livro,
+                opcaoCompra: item.opcaoCompra,
+                quantidade
+            })
+        }
+
         adicionarItemCarrinho({
             livro: item.livro,
             opcaoCompra: item.opcaoCompra,
