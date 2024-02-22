@@ -1,11 +1,11 @@
 import { useMutation, useQuery } from "@apollo/client"
-import { ADICIONAR_ITEM, OBTER_CARRINHO } from "./queries"
 import { ICarrinho } from "../../interfaces/ICarrinho"
+import { ADICIONAR_ITEM, OBTER_CARRINHO } from "./queries"
 
 export const useCarrinho = () => {
-  return useQuery<{ carrinho: ICarrinho }>(OBTER_CARRINHO)
+    return useQuery<{ carrinho: ICarrinho }>(OBTER_CARRINHO)
 }
 
 export const useAdicionarItem = () => {
-  return useMutation(ADICIONAR_ITEM)
+    return useMutation(ADICIONAR_ITEM)
 }

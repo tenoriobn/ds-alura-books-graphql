@@ -539,7 +539,7 @@
         {
           "livroId": 4,
           "opcaoCompraId": 1,
-          "quantidade": 1,
+          "quantidade": 3,
           "livro": {
             "id": 4,
             "categoriaId": 3,
@@ -603,12 +603,17 @@
         {
           "livroId": 1,
           "opcaoCompraId": 1,
-          "quantidade": 1
+          "quantidade": 15
         },
         {
           "livroId": 3,
           "opcaoCompraId": 2,
           "quantidade": 2
+        },
+        {
+          "livroId": 8,
+          "opcaoCompraId": 1,
+          "quantidade": 3
         }
       ],
       "total": 89.8

@@ -3,8 +3,8 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import ABPolloClient from './componentes/ABApolloClient';
-import Rotas from './rotas';
 import CarrinhoProvider from './contextApi/carrinho';
+import Rotas from './rotas';
 
 const queryClient = new QueryClient()
 

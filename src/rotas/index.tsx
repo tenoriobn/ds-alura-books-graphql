@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import AreaLogada from "../paginas/AreaLogada"
+import Carrinho from "../paginas/Carrinho"
 import Categoria from "../paginas/Categoria"
 import Home from "../paginas/Home"
 import Livro from "../paginas/Livro"
 import PaginaBase from "../paginas/PaginaBase"
 import Pedidos from "../paginas/Pedidos"
-import Carrinho from "../paginas/Carrinho"
 
 
 const Rotas = () => {

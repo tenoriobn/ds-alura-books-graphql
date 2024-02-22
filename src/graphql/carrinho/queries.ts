@@ -6,10 +6,12 @@ export const OBTER_CARRINHO = gql`
       total
       itens {
         quantidade
-        opcaoCompra {
+        opcaoCompra { 
+          id
           preco
         }
         livro {
+          id
           titulo
           descricao
           imagemCapa
@@ -23,7 +25,7 @@ export const OBTER_CARRINHO = gql`
 `
 
 export const ADICIONAR_ITEM = gql`
-  mutation AdicionarItem($item: ItemCarrinhoInput!) {
-    adicionarItem(item: $item)
-  }
+mutation AdicionarItem($item: ItemCarrinhoInput!) {
+  adicionarItem(item: $item)
+}
 `

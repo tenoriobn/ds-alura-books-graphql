@@ -1,14 +1,15 @@
 import { AbBotao } from "ds-alurabooks"
 import { Link } from "react-router-dom"
 import TituloPrincipal from "../../componentes/TituloPrincipal"
+import { useCarrinhoContext } from "../../contextApi/carrinho"
 import { formatador } from "../../utils/formatador-moeda"
 
-import './Sacola.css'
-import ItemCarrinho from "../../componentes/ItemCarrinho"
-import { useCarrinhoContext } from "../../contextApi/carrinho"
+import './Carrinho.css'
+import ItemCarrinho from "./ItemCarrinho"
 
 const Carrinho = () => {
-    const { carrinho, adicionarItemCarrinho } = useCarrinhoContext();
+
+    const { carrinho, adicionarItemCarrinho } = useCarrinhoContext()
 
     return (<section className="pagina-carrinho">
 

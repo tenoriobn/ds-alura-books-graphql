@@ -1,16 +1,26 @@
 import { AbInputQuantidade } from "ds-alurabooks"
+import { IItemCarrinho } from "../../../interfaces/IItemCarrinho"
+import { formatador } from "../../../utils/formatador-moeda"
 
-import lixeira from '../../assets/lixeira.png'
+import lixeira from './assets/lixeira.png'
 
 import './ItemCarrinho.css'
-import { IItemCarrinho } from "../../interfaces/IItemCarrinho"
-import { formatador } from "../../utils/formatador-moeda"
+import { useCarrinhoContext } from "../../../contextApi/carrinho"
 
 interface ItemCarrinhoProps {
     item: IItemCarrinho
 }
 
 const ItemCarrinho = ({ item } : ItemCarrinhoProps) => {
+    const { adicionarItemCarrinho } = useCarrinhoContext();
+
+    const alterarQuantidadeDoItem = (quantidade: number) => {
+        adicionarItemCarrinho({
+            livro: item.livro,
+            opcaoCompra: item.opcaoCompra,
+            quantidade
+        })
+    }
 
     return (
         <div className="item-carrinho">
@@ -35,7 +45,7 @@ const ItemCarrinho = ({ item } : ItemCarrinhoProps) => {
                 </ul>
             </div>
             <div className="quantidade">
-                <AbInputQuantidade value={item.quantidade} onChange={() => console.log('[AbInputQuantidade] - onChange')}/>
+                <AbInputQuantidade value={item.quantidade} onChange={alterarQuantidadeDoItem}/>
             </div>
             <div>
                 <button className="btn-excluir">
