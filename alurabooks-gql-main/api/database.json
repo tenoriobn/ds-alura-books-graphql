@@ -537,24 +537,23 @@
       "id": 1,
       "itens": [
         {
-          "livroId": 4,
+          "livroId": 1,
           "opcaoCompraId": 1,
           "quantidade": 1,
           "livro": {
-            "id": 4,
+            "id": 1,
+            "autorId": 1,
             "categoriaId": 3,
+            "titulo": "Acessibilidade na Web",
             "tagIds": [
-              5,
-              6
+              1
             ],
-            "titulo": "Bootstrap 4",
-            "slug": "bootstrap-4",
-            "descricao": "Conheça a biblioteca front-end mais utilizada no mundo",
-            "isbn": "978-85-94188-60-1",
-            "numeroPaginas": 172,
-            "publicacao": "2018-05-01",
-            "imagemCapa": "https://raw.githubusercontent.com/viniciosneves/alurabooks/curso-novo/public/imagens/livros/bootstrap4.png",
-            "autorId": 4,
+            "slug": "acessibilidade-na-web",
+            "descricao": "Boas práticas para construir sites e aplicações acessíveis",
+            "isbn": "978-65-86110-10-4",
+            "numeroPaginas": 246,
+            "publicacao": "2020-04-01",
+            "imagemCapa": "https://raw.githubusercontent.com/viniciosneves/alurabooks/curso-novo/public/imagens/livros/acessibilidade.png",
             "opcoesCompra": [
               {
                 "id": 1,
@@ -582,7 +581,7 @@
                 ]
               }
             ],
-            "sobre": "Fazer um site elegante nunca foi tão fácil, mesmo para quem não sabe escrever uma linha de CSS e, muito menos, entende como harmonizar cores, balancear elementos e tipografia. O Bootstrap é, resumidamente, um grande arquivo CSS com uma excelente documentação, que possui dezenas e dezenas de componentes prontos. No começo, foi criado pelo Twitter para servir como um guia de estilos em CSS da empresa; hoje, é a biblioteca mais famosa e utilizada no mundo."
+            "sobre": "Acessibilidade na Web consiste na eliminação de barreiras de acesso em páginas e aplicações digitais para que pessoas com deficiência tenham autonomia na rede. Na verdade, acessibilidade na web beneficia todas as pessoas. Em algum momento da vida todos podem precisar de acessibilidade, seja devido a uma limitação temporária ou permanente. Quando não levamos em consideração o acesso de pessoas com deficiência, estamos tirando o direito de uma pessoa de navegar, interagir ou consumir produtos e serviços na rede. Empatia é o fator principal para que as aplicações que desenvolvemos sejam inclusivas."
           },
           "opcaoCompra": {
             "id": 1,
@@ -598,7 +597,7 @@
         {
           "livroId": 2,
           "opcaoCompraId": 1,
-          "quantidade": 1,
+          "quantidade": 2,
           "livro": {
             "id": 2,
             "categoriaId": 3,
@@ -655,7 +654,7 @@
           }
         }
       ],
-      "total": 0
+      "total": 179.39999999999998
     }
   ],
   "tags": [

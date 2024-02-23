@@ -6,13 +6,14 @@ import { formatador } from "../../utils/formatador-moeda"
 
 import './Carrinho.css'
 import ItemCarrinho from "./ItemCarrinho"
+import LoadingCarrinho from "./LoadingCarrinho"
 
 const Carrinho = () => {
 
-    const { carrinho, adicionarItemCarrinho } = useCarrinhoContext()
+    const { carrinho, carregando } = useCarrinhoContext();
 
     return (<section className="pagina-carrinho">
-
+        {carregando && <LoadingCarrinho />}
         <TituloPrincipal texto="Minha sacola" />
         <div className="conteudo">
             <h4>Itens selecionados</h4>
