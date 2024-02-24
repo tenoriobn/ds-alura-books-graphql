@@ -3,10 +3,9 @@ import { Link } from "react-router-dom"
 import TituloPrincipal from "../../componentes/TituloPrincipal"
 import { useCarrinhoContext } from "../../contextApi/carrinho"
 import { formatador } from "../../utils/formatador-moeda"
-
-import './Carrinho.css'
 import ItemCarrinho from "./ItemCarrinho"
 import LoadingCarrinho from "./LoadingCarrinho"
+import './Carrinho.css'
 
 const Carrinho = () => {
 
@@ -28,9 +27,7 @@ const Carrinho = () => {
                 <ul>
                     <li>Total da compra</li>
                     <li><strong>{formatador.format(carrinho?.total || 0)}</strong></li>
-                    <li>
-                        <AbBotao texto="Finalizar compra" />
-                    </li>
+                    <li><AbBotao texto="Finalizar compra" /></li>
                 </ul>
             </footer>
         </div>

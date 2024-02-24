@@ -1,11 +1,9 @@
 import { AbInputQuantidade } from "ds-alurabooks"
 import { IItemCarrinho } from "../../../interfaces/IItemCarrinho"
 import { formatador } from "../../../utils/formatador-moeda"
-
-import lixeira from './assets/lixeira.png'
-
-import './ItemCarrinho.css'
 import { useCarrinhoContext } from "../../../contextApi/carrinho"
+import './ItemCarrinho.css'
+import lixeira from './assets/lixeira.png'
 
 interface ItemCarrinhoProps {
     item: IItemCarrinho

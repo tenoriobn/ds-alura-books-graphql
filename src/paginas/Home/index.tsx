@@ -1,5 +1,6 @@
 import { AbCampoTexto } from "ds-alurabooks"
 import { useState } from "react"
+import { useQuery } from "@apollo/client"
 import Banner from "../../componentes/Banner"
 import LivrosDestaque from "../../componentes/LivrosDestaque"
 import Newsletter from "../../componentes/Newsletter"
@@ -7,7 +8,6 @@ import TagsCategorias from "../../componentes/TagsCategorias"
 import Titulo from "../../componentes/Titulo"
 import { ILivro } from "../../interfaces/ILivro"
 import { OBTER_DESTAQUES } from "../../graphql/livros/queries"
-import { useQuery } from "@apollo/client"
 
 import './Home.css'
 
